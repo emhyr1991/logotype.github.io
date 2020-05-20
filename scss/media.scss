@@ -7,15 +7,54 @@
         min-height: 330px;
         margin: 30px auto;
     }
+    .form__inner {
+        background-image: none;
+    }
+    .news {
+        padding-bottom: 40px;
+    }
+    .news__inner {
+        display: block;
+    }
+    .news__slider {
+        max-width: 100%;
+        margin-bottom: 90px;
+    }
+    .news__blog {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        &:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    }
+    .news__images {
+        float: left;
+        margin-right: 50px;
+    }
+}
+@media (max-width: 1050px) {
+    .footer__inner {
+        display: block;
+    }
+    .footer__map {
+        max-width: 100%;
+    }
+    .footer__info {
+        margin-bottom: 25px;
+        max-width: 465px;
+    }
 }
 @media (max-width: 900px) {
     .slider .slick-btn {
         display: none !important;
     }
-    .services__top {
+    .services__top, .news__top {
         display: block;
     }
-    .services__title-box {
+    .services__title-box, .form__title-box, .news__title-box {
         padding-left: 0;
         text-align: center;
         margin: 0 auto 30px;
@@ -23,8 +62,33 @@
             display: none;
         }
     }
+    .news__btn {
+        text-align: center;
+    }
     .services__btn {
         text-align: center;
+    }
+    .form__box-inner {
+        display: block;
+        & .jq-selectbox.jqselect {
+            margin-bottom: 10px;
+        }
+    }
+    .form__box-left {
+        max-width: 100%;
+    }
+    .form__box-right {
+        max-width: 100%;
+    }
+    .form {
+        padding-bottom: 25px;
+    }
+    .advantages__inner {
+        display: block;
+    }
+    .advantages__item {
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 700px) {
@@ -66,6 +130,26 @@
         margin: 30px auto;
     }
 }
+@media (max-width: 540px) {
+    .news__slider {
+        padding: 50px 15px 25px 25px;
+        &:before {
+            left: 25px;
+        }
+    }
+    .news__slider-inner .slick-next {
+        right: -20px;
+    }
+    .news__slider-inner .slick-prev {
+        right: 35px;
+    }
+    .news__images {
+        float: none;
+    }
+    .news__slider-inner .slick-btn {
+        bottom: -90px;
+    }
+}
 @media (max-width: 414px) {
     .slider__title {
         font-size: 24px;
@@ -77,6 +161,9 @@
 @media (max-width: 400px) {
     .header__email {
         padding-right: 30px;
+    }
+    .advantages__item {
+        padding: 0;
     }
 }
 @media (min-width: 700px) {
